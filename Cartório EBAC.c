@@ -145,7 +145,8 @@ int main() //menu
 	printf("Dentre as opções no menu, escolha a desejada:\n\n");
 	printf("\t1 - Registrar nomes de usuário  \n");
 	printf("\t2 - Consultar nomes de usuário \n");
-	printf("\t3 - Deletar nomes de usuário \n"); 
+	printf("\t3 - Deletar nomes de usuário \n");
+	printf("\t4 - Sair do programa. \n"); 
 	printf("Opção:"); //Fim do menu
 	
 	scanf("%d",&opcao); //Armazenamento de escolhas do usuário!
@@ -166,6 +167,11 @@ int main() //menu
 		case 3:
 		deletar(); // Delatar consulta
 		break; //interromper repetição
+		
+		case 4:
+		printf("Obrigado por utilizar o programa!\n"); //fechar programa
+		return 0; //utilizado para sair de tudo 
+		break; // interromper repetição
 		
 		default: //algo invalado/sem nome
 		printf("Essa opção não está disponível!\n"); //escreve o que queremos 
